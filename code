@@ -1,0 +1,783 @@
+<nav class="nav" style="display: none;">
+  <div class="nav__container">
+     <!-- Hamburger Icon (only visible on mobile) -->
+    <div class="nav__icon" onclick="toggleMenu()">
+      <img src="https://storage.googleapis.com/msgsndr/P9FOGHMDAAmWeGz9D4MJ/media/67f32d660e32022fbb960ecd.png" alt="menu icon" id="menu-icon" />
+    </div>
+    <!--close icon -->
+    <div class="nav__close" onclick="toggleMenu()">
+        <span class="close-icon">&times;</span>
+      </div>
+    <!--nav logo -->
+    <div class="nav__logo">
+      <a href="/">
+        <img src="https://storage.googleapis.com/msgsndr/P9FOGHMDAAmWeGz9D4MJ/media/67fa028f3baf5d242883a85c.png" alt="PurpleFire Logo" class="logo">
+      </a>
+    </div>
+ 
+
+    <div class="navigation-links">
+      <!-- Services for desktop, with dropdown -->
+
+      <div class="nav-list">
+          <ul class="nav__links" id="nav-links">
+          <li class="navlink dropdown-hide">
+            <!--dropdown on desktop-->
+            <div class="dropdown-wrapper">
+              <a href="https://purplefire.io/services" class="navlinks">Services</a>
+              <ul class="dropdown">
+                <li class="dropdown-item-wrapper">
+                  <div class="dropdown-item">
+                    <a href="https://purplefire.io/cro" class="dropdown-link navlinks">Conversion Optimization</a>
+                    <span class="dropdown-arrow">
+                      <i class="fas fa-arrow-right arrow-icon"></i>
+                    </span>
+                  </div>
+                </li>
+                
+                <li class="dropdown-item-wrapper">
+                  <div class="dropdown-item">
+                    <a href="https://purplefire.io/paid-social" class="dropdown-link navlinks">Paid Social</a>
+                    <span class="dropdown-arrow">
+                      <i class="fas fa-arrow-right arrow-icon"></i>
+                    </span>
+                  </div>
+                </li>
+              
+                <li class="dropdown-item-wrapper">
+                  <div class="dropdown-item">
+                    <a href="https://purplefire.io/ppc-management" class="dropdown-link navlinks">PPC Management</a>
+                    <span class="dropdown-arrow">
+                      <i class="fas fa-arrow-right arrow-icon"></i>
+                    </span>
+                  </div>
+                </li>
+              
+                <li class="dropdown-item-wrapper">
+                  <div class="dropdown-item">
+                    <a href="https://purplefire.io/email-marketing" class="dropdown-link navlinks">Email Marketing</a>
+                    <span class="dropdown-arrow">
+                      <i class="fas fa-arrow-right arrow-icon"></i>
+                    </span>
+                  </div>
+                </li>
+              
+                <li class="dropdown-item-wrapper-lp">
+                  <div class="dropdown-item">
+                    <a href="https://purplefire.io/landing-pages" class="dropdown-link navlinks">Landing Pages</a>
+                    <span class="dropdown-arrow">
+                      <i class="fas fa-arrow-right arrow-icon"></i>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+          </li>
+          <!--Services options for mobile -->
+           <li class="navlink services-mobile"><a href="https://purplefire.io/services">Services</a><span class="dd-arrow-mobile"><i class="fas fa-arrow-right arrow-icon"></i></span></li>
+           <ul class="options-mobile">
+<li class="dropdown-item"><a href="https://purplefire.io/cro" class="dropdown-link">Conversion Optimization</a><span class="small-arrow-mobile"><i class="fas fa-arrow-right arrow-icon"></i></span></li>
+<li class="dropdown-item"><a href="https://purplefire.io/paid-social" class="dropdown-link">Paid Social</a><span class="small-arrow-mobile"><i class="fas fa-arrow-right arrow-icon"></i></span></li>
+<li class="dropdown-item"><a href="https://purplefire.io/ppc-management" class="dropdown-link">PPC Management</a><span class="small-arrow-mobile"><i class="fas fa-arrow-right arrow-icon"></i></span></li>
+<li class="dropdown-item"><a href="https://purplefire.io/email-marketing" class="dropdown-link">Email Marketing</a><span class="small-arrow-mobile"><i class="fas fa-arrow-right arrow-icon"></i></span></li>
+<li class="dropdown-item-lp"><a href="https://purplefire.io/landing-pages" class="dropdown-link">Landing Pages</a><span class="small-arrow-mobile"><i class="fas fa-arrow-right arrow-icon"></i></span></li>
+</ul>
+
+      
+             
+           <li class="navlink case-studies"><a href="https://purplefire.io/case-studies" class="navlinks ">Case Studies</a><span class="dd-arrow-mobile"><i class="fas fa-arrow-right arrow-icon"></i></span></li>
+          <li class="navlink"><a href="https://purplefire.io/faqs" class="navlinks">FAQs</a><span class="dd-arrow-mobile"><i class="fas fa-arrow-right arrow-icon"></i></span></li>
+          <li class="navlink"><a href="https://purplefire.io/about-us" class="navlinks">About Us</a><span class="dd-arrow-mobile"><i class="fas fa-arrow-right arrow-icon"></i></span></li>
+        </ul>
+        <!--desktop cta -->
+<div class="nav__cta">
+  <a class="cta-button cta-button-desktop" href="javascript:void(0)" onclick="togglePopup()">
+    <p class="cta-text btn-hp btn-vp" data-animation-class=""> Talk To Us</p>
+    <i class="fas fa-arrow-right arrow-icon"></i>
+  </a>
+</div>
+      
+      </div>
+<!--end desktop cta -->
+    </div>
+    
+    
+<!--cta mobile -->
+<div class="nav__cta cta-mobile">
+  <a href="javascript:void(0)" class="cta-button cta-button-mobile" onclick="togglePopup()">
+    <p class="cta-text cta-text-mobile"> Talk To Us</p>
+    <i class="fas fa-arrow-right arrow-icon arrow-icon-mobile"></i>
+  </a>
+</div>
+  </div>
+    
+</nav>
+
+<!-- Popup Modal for Survey -->
+<div id="surveyPopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="togglePopup()">&times;</span>
+    <iframe src="https://api.leadconnectorhq.com/widget/survey/1gCebMmhWCo6kidk4aAQ"
+      style="border:none;width:100%;height:500px;"
+      scrolling="no"
+      title="PurpleFire Main Qualification Survey"></iframe>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+  </div>
+</div>
+
+<style>
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    .popup-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 0px!important;
+    border-radius: 12px;
+    width: 100%!important;
+    max-width: 700px;
+    position: relative;
+  }
+    
+  }
+    
+
+  .popup-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 30px!important;
+    border-radius: 12px;
+    width: 90%!important;
+    max-width: 700px;
+    position: relative;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  function togglePopup() {
+    const popup = document.getElementById("surveyPopup");
+    popup.style.display = popup.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+<script>
+const header = document.querySelector('.nav');
+let lastScrollTop = 0; // To keep track of the previous scroll position
+
+window.addEventListener('scroll', () => {
+let currentScroll = window.scrollY; // Get current scroll position
+
+if (currentScroll > lastScrollTop) {
+  // Scrolling down
+  header.classList.add('shrink');
+} else {
+  // Scrolling up
+  header.classList.remove('shrink');
+}
+
+lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  header.classList.add('show');
+});
+
+
+function toggleMenu() {
+const nav = document.querySelector('.navigation-links');
+const closeIcon = document.querySelector('.nav__close');  // Select the close icon
+
+
+nav.classList.toggle('active');
+closeIcon.classList.toggle('active');
+}
+
+</script>
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+
+<style>
+
+ .dropdown-item-wrapper {
+    padding: 14px 8px;
+  border: none;
+  border-bottom: 0;
+  border-image: repeating-linear-gradient(
+  to right,
+  #D5C8F0 0,
+  #D5C8F0 10px,
+  transparent 10px,
+  transparent 20px
+);
+  border-image-slice: 1;
+  border-image-width: 0px 0px 1.5px 0px; 
+  /* border-image-outset: 0; */
+  /* border-image-repeat: stretch; */
+  /* border-bottom-style: solid; */
+}
+   .dropdown-item-wrapper-lp {
+  padding: 14px 8px;
+  border: none;
+  
+  }
+.small-arrow-mobile {
+    display: flex;
+    font-size: 10px;
+    color: orange;
+    height: 16px;
+    align-items: flex-start;
+}
+  /*.dropdown-item:hover .dropdown-link{
+  color: black;
+  } */
+  .dropdown-item:hover .navlinks::after
+  {
+    transform: scaleX(1);
+  }
+  /*
+    .navlinks:hover::after {
+    transform: scaleX(1);
+  }
+
+  .navlinks:not(:hover)::after {
+    transform-origin: right;
+    transition: transform 0.4s ease;
+    transform: scaleX(0);
+  }
+*/
+  .options-mobile .dropdown-link{
+      white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    border: none !important;
+  }
+    .options-mobile .dropdown-item {
+    border: none !important;
+  }
+.dropdown-arrow,  .dd-arrow-mobile{
+    background-color: #FF8A35;
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+ .dd-arrow-mobile {
+   display: none;
+}
+.dropdown-item:hover .dropdown-arrow {
+    background-color:  rgb(33 11 78);
+}
+  /*
+   .dropdown-item:hover .lp {
+  background-color: yellow !important;
+  }
+   .lp: hover {
+  background-color: yellow;
+  }*/
+    .dropdown-item-lp:hover .lp{
+  background-color: rgb(33 11 78);
+  }
+  
+
+ .nav-list {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+
+}
+  .cta-button-mobile {
+  padding: 10px 12px !important; 
+  }
+  .cta-text-mobile{
+  font-size: 12px !important;
+  }
+  .services-mobile, .options-mobile, .services-mobile {display: none !important;}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  z-index: 2;
+}
+
+.dropdown::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    left: 0;
+    width: 45%;
+    /* background: red; */
+    height: 70px;
+    z-index: -1;
+}
+
+.dropdown-wrapper:hover .dropdown,
+.dropdown:hover {
+  display: block;
+}
+
+
+
+#menu-icon{
+ width: 40px;
+}
+/* Show dropdown when either .navlinks or .dropdown is hovered via the wrapper */
+.lp { 
+background-color: #FF8A35;
+padding: 16px; 
+border-radius: 16px; 
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.dropdown-wrapper{
+position: relative;
+}
+.dropdown-wrapper:hover .dropdown {
+opacity: 1;
+transform: scale(1);
+pointer-events: auto;
+}
+.dropdown-item-lp{
+ display: flex;
+  justify-content: space-between;
+  padding: 14px 8px;
+  border: none;
+   align-items: center;
+    transition: background-color 0.3s ease;
+}
+  
+.dropdown-item {
+     display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-link {
+white-space: nowrap;
+}
+.dropdown {
+background: rgb(245,240,240);
+  position: absolute;
+  display: flex;
+  height: 370px;
+  width: 436px;
+  border: 1px solid rgb(33, 11, 80);
+  top: 54px;
+  left: -16px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px 24px;
+  margin: 0;
+  list-style: none;
+ opacity: 0;
+  transform: scale(0.9);
+  transform-origin: top;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+  flex-direction: column;
+  justify-content: space-around;
+ pointer-events: none;
+}
+.cta-text{
+  transform: scaleX(1);
+  white-space: nowrap;
+  transition: transform 0.3s ease;
+  font-size: 20px;
+}
+.cta-button:hover .cta-text{
+transform: scaleX(1.05);
+}
+.arrow-icon{
+transition: transform 0.3s ease;
+    transform: rotate(-30deg);
+}
+ .cta-button:hover .arrow-icon {
+    transform: rotate(0deg); /* Like 3 o'clock */
+  }
+.navlinks {
+    position: relative;
+    display: inline-block;
+    color: rgb(33 11 78);
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .navlinks::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: rgb(33 11 78);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+
+  .navlinks:hover::after {
+    transform: scaleX(1);
+  }
+
+  .navlinks:not(:hover)::after {
+    transform-origin: right;
+    transition: transform 0.4s ease;
+    transform: scaleX(0);
+  }
+
+/* General Styles */
+.navlink {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 10px 20px;
+  position: relative;
+  text-decoration: none;
+}
+.navlink a {
+  text-decoration: none;
+  font-family: 'Gabarito', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(33 11 78);
+  transition: color 0.3s;
+  padding-bottom: 4px;
+}
+
+
+/* Navigation Bar */
+.nav.show {
+display: block !important;
+  border-top: none !important;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(33, 11, 80);
+  background-color: rgb(244, 240, 240);
+  width: 100%;
+left: 50%;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  box-shadow: rgb(21, 6, 52) 4px 4px 0px 0px;
+  opacity: 1;
+  align-content: center;
+  align-items: center;
+  height: min-content;
+  max-width: 1150px;
+  overflow: visible;
+  padding: 4px 32px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+   transition: transform 0.2s ease;
+
+}
+
+   .nav.shrink {
+    transform: translateX(-50%) translateY(-5px)  scale(0.95);
+  }
+
+.nav__container {
+  display: flex;
+  flex: none;
+  height: 73px;
+  overflow: visible;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  width: 142px;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.navigation-links {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0px;
+  /* height: 100%; */
+  justify-content: flex-end;
+  /* overflow: visible; */
+  padding: 9.600000381469727px 0;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: calc(49.315068493150704% - 100% / 2); */
+  width: 935px;
+}
+.nav__links {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: end;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: 577px;
+  list-style-type: none;
+}
+
+
+
+/* CTA Button */
+.nav__cta .cta-button {
+  text-decoration: none;
+ background: linear-gradient(137.865deg, rgb(14, 3, 37) 0%, rgb(33, 11, 80) 100%);
+  color: white;
+  font-size: 18px;
+  font-family: 'Gabarito', sans-serif;
+  font-weight: 500;
+  padding: 16px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.cta-button i {
+  font-size: 14px;
+}
+/* Hamburger Menu Icon */
+.nav__icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav__close{
+width: 40px;
+display: none;
+}
+.close-icon{
+font-size: 40px;
+}
+  
+ /* Mobile Styles */
+   @media screen and (min-width: 1078.1px) {
+     .cta-mobile .cta-button-mobile{
+     display: none;
+     }
+  .navlink a:hover {
+font-weight: 500;
+}
+     @media screen and (max-width: 767px) {
+          .nav__icon {
+cursor: none;
+}
+     }
+
+  }
+    @media screen and (max-width: 1078px) {
+       .dd-arrow-mobile {
+   display: block;
+}
+      .cta-button-desktop{
+      display: none !important;
+      }
+      .lp{
+      display: none;
+      }
+     /* .dropdown-item, .dropdown-item-lp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Gabarito", sans-serif;
+    font-size: 20px;
+    padding: 8px 8px;
+    font-weight: 600;
+    border: none !important;
+        
+}*/
+      .dropdown-item, .dropdown-item-lp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 8px;
+    font-family: "Gabarito", sans-serif;
+    font-size: 18px;
+    padding: 8px 8px;
+    font-weight: 600;
+    border: none !important;
+}
+
+   .options-mobile {
+    padding-left: 4px;
+}
+      .navlink a {
+      color: white;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .nav__container{
+      padding: 4px  !important;
+           height: 60px;
+      }
+      .nav.show {
+      padding: 0;
+      }
+          .cta-mobile, .options-mobile
+      {
+        display: block !important;
+
+      }
+      
+      .options-mobile{
+            width: 100%;
+      }
+      .nav__icon {
+        display: block;
+        padding-left: 8px;
+      }
+      .services-mobile{
+    display: flex !important;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+      /* Hide desktop nav */
+      .navigation-links {
+        display: none;
+        
+      }
+      /* Mobile navigation container when active */
+.navigation-links.active {
+    display: flex;
+    padding-left: 40px;
+    transform: translateX(-50%);
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 0px;
+    width: 425px;
+    max-width: 425px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: linear-gradient(137.865deg, rgb(14, 3, 37) 0%, rgb(33, 11, 80) 100%);
+    z-index: 1000;
+    /* padding: 0; */
+    box-shadow: -4px 0 10px rgba(33,11,80,0.2);
+    align-items: flex-start;
+  justify-content: flex-start;
+}
+    
+ .case-studies {
+    text-decoration: none;
+    border-top: 1px solid transparent;
+   border-bottom: 1px solid transparent !important;
+    border-image: repeating-linear-gradient(to right, #a18d8d 0, #a18d8d 10px, transparent 10px, transparent 20px) !important;
+    border-image-slice: 1 !important;
+    /* border-image-width: 0px 0px 1.5px 0px !important; */
+}
+      /* Show close button */
+ .nav__close.active {
+    display: block;
+    position: fixed;
+    top: 11px;
+    color: white;
+    right: -11px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 1100;
+    font-weight: 600;
+}
+      /* Stack nav links vertically */
+.nav__links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 319px;
+    /* max-width: 319px; */
+    gap: 10px;
+    color: white;
+    height: 535px;
+    padding-top: 60px;
+    text-align: center;
+    align-items: flex-start;
+  	justify-content: end;
+}
+    
+      .navlink {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    height: min-content;
+    overflow: visible;
+    padding: 10px 0px;
+    position: relative;
+    text-decoration: none;
+    border-bottom: 0;
+    border-image: repeating-linear-gradient(to right, #a18d8d 0, #a18d8d 10px, transparent 10px, transparent 20px);
+    border-image-slice: 1;
+    border-image-width: 0px 0px 1.5px 0px;
+}
+      /* The .nav-list container covers full width */
+    
+       .nav.shrink {
+    transform: translateX(-50%) translateY(0px)  scale(1);
+  }
+      .nav.show {
+      width: 365px;
+      }
+      .dropdown-hide{
+      display: none;
+      }
+    }
+
+</style>
